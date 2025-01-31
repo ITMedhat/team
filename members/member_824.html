@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/members_about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <title>يوسف محمد حازم صياد - الصفحة الشخصية</title>
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header class="member-profile-header">
+        <div class="left-section">
+            <a href="../index.html">
+                <img src="../media/logos/logo.png" alt="Logo" class="logo">
+            </a>
+            <span class="tech-team">الفريق التقني</span>
+        </div>
+        <nav>
+            <a href="../index.html">الرئيسية</a>
+            <a href="../pages/members.html">الأعضاء</a>
+            <!-- <a href="../pages/student-activities.html">الأنشطة الطلابية</a> -->
+            <a href="../pages/about.html">عن الفريق</a>
+            <!-- <a href="../pages/resources.html">الموارد</a> -->
+        </nav>
+    </header>
+
+    <!-- Member Content -->
+    <div class="content">
+        <!-- Member Photo and Name -->
+        <img src="../media/members_profiles/member_824.jpg" alt="صورة العضو" class="profile-pic">
+        <div class="member-name">يوسف محمد حازم صياد</div>
+
+        <!-- Personal Info Section -->
+        <div class="section" id="section1">
+            <h2>المعلومات الشخصية</h2>
+            <div><strong>الرتبة:</strong> قريق Frontend</div>
+            <div><strong>الرقم المسلسل:</strong> 824</div>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="section" id="section2">
+            <h2>الهدف</h2>
+            <div>
+                هدفي هو تطوير الفريق وتحقيق التميز في تقديم الحلول التقنية المبتكرة التي تساهم في تحسين العملية التعليمية.
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="section3">
+            <h2>المهارات</h2>
+            <div>- خبرة في إدارة المشاريع البرمجية.</div>
+            <div>- مهارات قوية في تطوير البرمجيات باستخدام لغات مثل Python وJava.</div>
+            <div>- قدرة على تحليل البيانات واتخاذ القرارات الاستراتيجية.</div>
+            <div>- خبرة في قيادة الفرق وتحقيق الأهداف بكفاءة.</div>
+        </div>
+
+        <!-- Additional Info Section -->
+        <div class="section" id="section4">
+            <h2>معلومات أخرى</h2>
+            <div>- لديه خبرة في تصميم أنظمة قواعد البيانات وإدارتها.</div>
+            <div>- يعمل على تطوير واجهات المستخدم التفاعلية باستخدام تقنيات حديثة.</div>
+            <div>- يمتلك مهارات اتصال قوية ويعمل على تعزيز التعاون بين أعضاء الفريق.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div><strong>تواصل مع الفريق:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a> | 01066480958</div>
+        <p>© كل الحقوق محفوظة للفريق التقني - 2024</p>
+    </footer>
+
+    <!-- Script for Animations -->
+    <script>
+        function showSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                }, index * 1500); // كل قسم يظهر بعد 1.5 ثانية من اللي قبله
+            });
+        }
+
+        window.onload = function() {
+            showSections();
+            document.querySelector('.content').style.opacity = 1;
+        };
+    </script>
+</body>
+</html>

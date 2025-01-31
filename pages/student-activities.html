@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأنشطة الطلابية - الفريق التقني</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background: #121212;
+            color: #e0e0e0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #1e1e1e;
+        }
+        .header img {
+            width: 80px;
+            height: 80px;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            text-align: center;
+        }
+        .main-content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .main-content h2 {
+            color: #00BFFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .activity {
+            margin-bottom: 30px;
+            border: 1px solid #00BFFF;
+            border-radius: 10px;
+            padding: 15px;
+            background: #2e2e2e;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .activity h3 {
+            color: #00BFFF;
+        }
+        .activity img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .activity video {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #1e1e1e;
+            color: #8f8f8f;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>الأنشطة الطلابية</h1>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo">
+        </a>
+    </header>
+    <div class="main-content">
+        <h2>أهم الأنشطة الطلابية</h2>
+
+        <div class="activity">
+            <h3>رحلة ميدانية</h3>
+            <p>قام الطلاب بزيارة المتحف المصري لتعلم المزيد عن التاريخ المصري القديم.</p>
+            <img src="field_trip.jpg" alt="صور من الرحلة">
+            <video controls>
+                <source src="field_trip_video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+
+        <div class="activity">
+            <h3>فعالية رياضية</h3>
+            <p>نظمت المدرسة مسابقة كرة قدم بين الصفوف الدراسية لتشجيع الروح الرياضية.</p>
+            <img src="sports_event.jpg" alt="صور من الفعالية الرياضية">
+            <video controls>
+                <source src="sports_event_video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+
+        <div class="activity">
+            <h3>مسابقة فنون</h3>
+            <p>شارك الطلاب في معرض للرسم والفنون وعرضوا أعمالهم الإبداعية.</p>
+            <img src="art_competition.jpg" alt="صور من مسابقة الفنون">
+            <video controls>
+                <source src="art_competition_video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>للاطلاع على المزيد، اضغط هنا: <a href="index.html">العودة للصفحة الرئيسية</a></p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>© حقوق الفريق محفوظة</p>
+    </footer>
+</body>
+</html>

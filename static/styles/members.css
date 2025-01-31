@@ -1,0 +1,168 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* Color Variables */
+:root {
+    --background-color: #121212;
+    --primary-color: #00BFFF;
+    --secondary-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --hover-color: #cc8b00;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --card-bg: #2a2a2a;
+    --card-hover-bg: #3a3a3a;
+}
+
+/* General Styles */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background: var(--background-color);
+    color: var(--text-color);
+    animation: fadeIn 2s ease-out;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.tech-team {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-section {
+    margin-bottom: 60px;
+}
+
+.team-section h2 {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #b0b0b0;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    background: var(--card-hover-bg);
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.member-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.member-card a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--secondary-color);
+    color: #8f8f8f;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

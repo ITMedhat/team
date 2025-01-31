@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/members_about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <title>محمد علاء محمد عبد العزيز - الصفحة الشخصية</title>
+</head>
+<body>
+    <header class="member-profile-header">
+        <div class="left-section">
+            <a href="../index.html">
+                <img src="../media/logos/logo.png" alt="Logo" class="logo">
+            </a>
+            <span class="tech-team">الفريق التقني</span>
+        </div>
+        <nav>
+            <a href="../index.html">الرئيسية</a>
+            <a href="../pages/members.html">الأعضاء</a>
+            <a href="../pages/about.html">عن الفريق</a>
+        </nav>
+    </header>
+    <div class="content">
+        <img src="../media/members_profiles/member_496.jpg" alt="صورة العضو" class="profile-pic">
+        <div class="member-name">محمد علاء محمد عبد العزيز</div>
+        <div class="section" id="section1">
+            <h2>المعلومات الشخصية</h2>
+            <div><strong>الرتبة:</strong> عضو في فريق Backend</div>
+            <div><strong>الرقم المسلسل:</strong> 496</div>
+        </div>
+        <div class="section" id="section2">
+            <h2>الهدف</h2>
+            <div>هدفي هو تطوير مهاراتي في البرمجة الخلفية والمساهمة في بناء أنظمة قوية وفعالة.</div>
+        </div>
+        <div class="section" id="section3">
+            <h2>المهارات</h2>
+            <div>- خبرة في لغات البرمجة مثل Python وJava.</div>
+            <div>- معرفة بقواعد البيانات وإدارتها.</div>
+            <div>- قدرة على حل المشكلات البرمجية المعقدة.</div>
+        </div>
+    </div>
+    <footer>
+        <div><strong>تواصل مع الفريق:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a> | 01066480958</div>
+        <p>© كل الحقوق محفوظة للفريق التقني - 2024</p>
+    </footer>
+    <script>
+        function showSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                }, index * 1500);
+            });
+        }
+        window.onload = function() {
+            showSections();
+            document.querySelector('.content').style.opacity = 1;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورش عمل فريق تقني - مدرسة الشهيد مدحت طلعت</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/logos/logo.png" type="image/png">
+    <style>
+        /* Additional CSS for circular logo and mobile responsiveness */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero img {
+            width: 120px; /* Adjust logo size */
+            height: 120px; /* Ensure equal width and height for a perfect circle */
+            border-radius: 50%; /* Make the logo circular */
+            object-fit: cover; /* Ensure the image fits nicely in the circle */
+        }
+
+
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        /* Ensure feature cards are responsive */
+        .feature-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 0 10px;
+        }
+
+        .feature-card {
+            padding: 15px;
+        }
+
+        /* Restore original header layout */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--secondary-color);
+            box-shadow: 0 4px 8px var(--shadow-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .left-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .tech-team {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html">
+                <img src="../media/logos/logo.png" alt="Logo" class="logo">
+            </a>
+            <strong><span class="tech-team">Tech Team</span></strong>
+        </div>
+        <nav>
+            <a href="../index.html">الصفحة الرئيسية</a>
+            <a href="#workshops">التدريبات</a>
+            <!-- <a href="#resources">الموارد</a>
+            <a href="#contact">اتصل بنا</a> -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="../media/logos/schoollogo.png" alt="School Logo">
+            <div>
+                <h1>ورش عمل الفريق التقني</h1>
+                <p>مدرسة الشهيد مدحت طلعت - تدريبات منتصف العام</p>
+            </div>
+        </div>
+        <a href="#workshops" class="btn">تصفح الورش</a>
+    </section>
+
+    <!-- Workshops Section -->
+    <section class="features" id="workshops">
+        <h2>مرحبًا بكم في جدول ورش العمل</h2>
+        <div class="intro-text" style="text-align: right; margin: 20px auto; max-width: 900px; padding: 20px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 4px 8px var(--shadow-color);">
+            <p>في إطار تنفيذ توجيهات الرئيس عبد الفتاح السيسي بأهمية تعزيز تعليم النشء البرمجة وعلوم البيانات، بدأت وزارتا التعليم العالي والاتصالات، بحث تطوير المنظومة التعليمية من خلال استخدام أدوات تكنولوجيا المعلومات، ومراجعة وتطوير مناهج تكنولوجيا المعلومات والاتصالات ICT، المطبقة بداية من الصف الرابع الابتدائي في ضوء إعداد الطلاب للمستقبل والتوجيهات الرئاسية، وليتم تطعيمها بالبرمجة وعلوم البيانات، وتنفيذ رؤية مصر 2030.</p>
+            <p>وفي هذا الصدد، توجهت ادارة المدرسة بقيادة الاستاذة الفاضلة مني حشيش بإنشاء ورش عمل متخصصة تحت إشراف ورعاية وحدة التطوير التكنولوجي بالمدرسة، وذلك لتعزيز مهارات الطلاب في مجالات البرمجة وعلوم البيانات، وتمكينهم من مواكبة متطلبات العصر الرقمي، بما يتماشى مع التوجيهات الرئاسية واستراتيجية الدولة نحو بناء جيل قادر على الابتكار والمنافسة عالميًا.</p>
+        </div>
+
+        <h2>التدريبات المتاحة</h2>
+        <div class="feature-grid">
+            <!-- Workshop 1: AI
+            <div class="feature-card" style="text-align: right;">
+                <h3>💻ورشة الذكاء الاصطناعي (AI)</h3>
+                <p><strong>المدرب:</strong> مهند تامر مفرح</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم أساسيات البيانات والذكاء الاصطناعي</p>
+                <p><strong>التاريخ:</strong> N/A</p>
+                <a href="https://forms.gle/AHxnc5mLmiCp1Qk58" class="btn">تسجيل</a>
+                <a href="about/ai_about_page.html" class="btn">اعرف المزيد</a>
+            </div>
+
+            Workshop 2: Marketing
+            <div class="feature-card" style="text-align: right;">
+                <h3>📚ورشة التسويق وإدارة المشروعات (Marketing)</h3>
+                <p><strong>المدرب:</strong> محمد علاء محمد</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم أساسيات التسويق الإلكتروني وإدارة المشروعات</p>
+                <p><strong>التاريخ:</strong> N/A</p>
+                <a href="https://forms.gle/8ykV7KSGatMmrTmc7" class="btn">تسجيل</a>
+                <a href="about/marketing_about_page.html" class="btn">اعرف المزيد</a>
+            </div>
+
+            Workshop 3: IT Basics
+            <div class="feature-card" style="text-align: right;">
+                <h3>💾أساسيات استخدام الكمبيوتر (IT)</h3>
+                <p><strong>المدرب:</strong> سما سالم</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم أساسيات التعامل مع أجهزة الكمبيوتر وأنظمة Windows</p>
+                <p><strong>التاريخ:</strong> N/A</p>
+                <a href="https://forms.gle/ZA7pFankCHiFBfsX7" class="btn">تسجيل</a>
+                <a href="about/it_about_page.html" class="btn">اعرف المزيد</a>
+            </div>
+
+            Workshop 4: Video Editing
+            <div class="feature-card" style="text-align: right;">
+                <h3>📷تعلم المونتاج (Video Editing)</h3>
+                <p><strong>المدرب:</strong> أحمد سامر عبدربه</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم أساسيات تعديل الفيديوهات باستخدام تطبيق CapCut</p>
+                <p><strong>التاريخ:</strong> N/A</p>
+                <a href="https://forms.gle/mVPUt2bwZvZm7cGk9" class="btn">تسجيل</a>
+                <a href="about/video_about_page.html" class="btn">اعرف المزيد</a>
+            </div>
+
+
+            <div class="feature-card", style="text-align: right;">
+                <div class="workshop-header">
+                <h3>اساسيات استخدام الكمبيوتر (IT)</h3>
+                </div>
+                <p> <strong>المدرب : </strong>حسين يحيى</p>
+                <p><strong> بيئة الجلسة : </strong>Offline</p>
+                <p> <strong>المكان : </strong>مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p><strong>هدف الورشة : </strong>تعلم اساسيات التعامل مع اجهزه الكمبيوتر وانظمه ال Windows</p>
+                <p><strong>التاريخ : </strong>2/3/2025 <strong>الموافق : </strong>الاثنين</p>
+                <p><strong>الفئة المستهدفة : </strong>ثانوي / اعدادي</p>
+                <a href="https://forms.gle/niu4sytZL8K3FiKr6" class="btn">تسجيل</a>
+                <a href="about_it_1.html" class="btn">اعرف المزيد</a>
+            </div> -->
+
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>🖥️اساسيات استخدام الكمبيوتر (IT)</h3>
+                <p><strong>المدرب:</strong> حسين يحيى</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم اساسيات التعامل مع اجهزه الكمبيوتر وانظمه ال Windows</p>
+                <p><strong>التاريخ:</strong> 2/3/2025 <strong>الموافق:</strong> الاثنين</p>
+                <p><strong>المعاد : </strong> 10:30AM</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/niu4sytZL8K3FiKr6" class="btn">تسجيل</a>
+                <a href="about_it_1.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>🤖ورشة الذكاء الاصطناعي (AI)</h3>
+                <p><strong>المدرب:</strong> مهند تامر مفرح</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم اسايات البيانات و الذكاء الاصتناعي</p>
+                <p><strong>التاريخ:</strong> 2/4/2025 <strong>الموافق:</strong> الثلاثاء</p>
+                <p><strong>المعاد : </strong> 10:30AM</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/xkeWTtamwi8ruK2N6" class="btn">تسجيل</a>
+                <a href="about_ai_2.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>⚙️ورشة الأردوينو (Arduino)</h3>
+                <p><strong>المدرب:</strong> احمد محمد عبدالعليم</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم كيفية التعامل مع الاردوينو</p>
+                <p><strong>التاريخ:</strong> 2/5/2025 <strong>الموافق:</strong> الاربعاء</p>
+                <p><strong>المعاد : </strong> 10:30AM</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/67UnjzFdsiCEXXJE9" class="btn">تسجيل</a>
+                <a href="about_ardouino_3.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>🎬تعلم المونتاج (Video Editing)</h3>
+                <p><strong>المدرب:</strong> أحمد سامر</p>
+                <p><strong>بيئة الجلسة:</strong> Online</p>
+                <p><strong>المعاد : </strong> 6:00PM</p>
+                <!-- <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p> -->
+                <p>تعلم اساسيات تعديل الفيديوهات علي تطبيق CapCut</p>
+                <p><strong>التاريخ:</strong> 2/5/2025 <strong>الموافق:</strong> الاربعاء</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/snsRyHYZxahJLJfSA" class="btn">تسجيل</a>
+                <a href="about_ve_10.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>📈ورشه التسويق و ادراة المشروعات (Marketing)</h3>
+                <p><strong>المدرب:</strong> محمد علاء محمد</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>تعلم اساسيات التسويق الالكتروني واداره المشروعات</p>
+                <p><strong>التاريخ:</strong> 2/6/2025 <strong>الموافق:</strong> الخميس</p>
+                <p><strong>المعاد : </strong> 10:30AM</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/FsnjcPiwFizsqZxm6" class="btn">تسجيل</a>
+                <a href="about_marketing_9.html" class="btn">اعرف المزيد</a>
+            </div>
+
+            <div class="feature-card" style="text-align: right;">
+                <h3>🖱️اساسيات استخدام الكمبيوتر (IT)</h3>
+                <p><strong>المدرب:</strong> سما سالم</p>
+                <p><strong>بيئة الجلسة:</strong> Online</p>
+                <p><strong>المعاد : </strong> 6:00PM</p>
+                <!-- <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p> -->
+                <p>تعلم اساسيات التعامل مع اجهزه الكمبيوتر وانظمه ال Windows</p>
+                <p><strong>التاريخ:</strong> 2/6/2025 <strong>الموافق:</strong> الخميس</p>
+                <p><strong>الفئة المستهدفة:</strong> ابتدائي</p>
+                <a href="https://forms.gle/nqWDvWCrra9naBZX7" class="btn">تسجيل</a>
+                <a href="about_it_4.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>📋ورشة تطوير المواقع (Web Development)</h3>
+                <p><strong>المدرب:</strong> حبيبة</p>
+                <p><strong>بيئة الجلسة:</strong> Online</p>
+                <p><strong>المعاد : </strong> 6:00PM</p>
+                <!-- <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p> -->
+                <!-- <p>هدف الورشة غير محدد</p> -->
+                <p>تعلم اساسيات انشاء مواقع الويب</p>
+                <p><strong>التاريخ:</strong> 2/10/2025 <strong>الموافق:</strong> الاثنين</p>
+                <p><strong>الفئة المستهدفة:</strong> غير محددة</p>
+                <a href="https://forms.gle/NKEgLzwaogyEU4257" class="btn">تسجيل</a>
+                <a href="about_5.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>🎮مقدمه عن تطوير الالعاب (Game Development)</h3>
+                <p><strong>المدرب:</strong> الاء</p>
+                <p><strong>بيئة الجلسة:</strong> Online</p>
+                <p><strong>المعاد : </strong> 6:00PM</p>
+                <!-- <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p> -->
+                <p>فهم و ادراك مصتلح تطوير الالعاب و تطبيق مثال عملي في محرك Scratch</p>
+                <p><strong>التاريخ:</strong> 2/11/2025 <strong>الموافق:</strong> الثلاثاء</p>
+                <p><strong>الفئة المستهدفة:</strong> ابتدائي / اعدادي</p>
+                <a href="https://forms.gle/mVPUt2bwZvZm7cGk9" class="btn">تسجيل</a>
+                <a href="about_6.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>🔒الامن السيبراني (Cyber Security)</h3>
+                <p><strong>المدرب:</strong> شذا</p>
+                <p><strong>بيئة الجلسة:</strong> Offline</p>
+                <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p>
+                <p>نعلم اساسيات الامن السيبراني</p>
+                <p><strong>المعاد : </strong> 10:30AM</p>
+                <p><strong>التاريخ:</strong> 2/12/2025 <strong>الموافق:</strong> الاربعاء</p>
+                <p><strong>الفئة المستهدفة:</strong> ثانوي / اعدادي</p>
+                <a href="https://forms.gle/LguxmxzAPNr5kmsu5" class="btn">تسجيل</a>
+                <a href="about_cs_7.html" class="btn">اعرف المزيد</a>
+            </div>
+            
+            <div class="feature-card" style="text-align: right;">
+                <h3>👩‍💻القرصنة الأخلاقية (Ethical Hacking)</h3>
+                <p><strong>المدرب:</strong> ملك</p>
+                <p><strong>بيئة الجلسة:</strong> Online</p>
+                <p><strong>المعاد : </strong> 6:00PM</p>
+                <!-- <p><strong>المكان:</strong> مختبر التطوير التكنولوجي بالمدرسة</p> -->
+                <!-- <p>هدف الورشة غير محدد</p> -->
+                 <p>تعلم مهفوم القرصة الاخلاقيه و امثلة لها</p>
+                <p><strong>التاريخ:</strong> 2/13/2025 <strong>الموافق:</strong> الخميس</p>
+                <p><strong>الفئة المستهدفة:</strong> غير محددة</p>
+                <a href="https://forms.gle/mVPUt2bwZvZm7cGk9" class="btn">تسجيل</a>
+                <a href="about_8.html" class="btn">اعرف المزيد</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 الفريق التقني</p>
+    </footer>
+</body>
+</html>
