@@ -1,0 +1,333 @@
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #e0e0e0;
+  direction: rtl;
+}
+
+/* Header styling */
+header {
+  background-color: #1e1e1e;
+  /* Light background for the header */
+  padding: 10px 0;
+  /* Add some padding */
+  position: sticky;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  /* Vertically center items */
+  justify-content: space-between;
+  /* Space between logo/title and links */
+}
+
+/* Group logo and title together */
+.logo-title {
+  display: flex;
+  align-items: center;
+  /* Vertically center logo and title */
+  gap: 10px;
+  /* Space between logo and title */
+  color: white;
+}
+
+.logo-title p {
+  border-right: 2px solid white;
+  padding-right: 15px;
+  margin-right: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav img {
+  width: 100px;
+  /* Adjust logo width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+nav p {
+  font-size: 24px;
+  /* Large font size for the title */
+  font-weight: bold;
+  /* Bold text */
+  color: white;
+  ;
+  /* Dark text color */
+  margin: 0;
+  /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  /* Remove bullet points */
+  display: flex;
+  /* Display links in a row */
+  gap: 20px;
+  margin-left: 75px;
+  /* Space between links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Link color */
+  font-size: 20px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  transition: color 0.3s ease;
+  margin-left: 10px;
+  color: white;
+      display: inline-block;
+        padding: 10px 20px;
+        background-color: #6a89cc;
+        /* New accent color */
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        padding: 8px 18px;
+  /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #4a69bd;
+      /* Darker accent on hover */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+      /* Change color on hover */
+}
+
+        .main-content {
+          max-width: 1000px;
+          margin: 30px auto;
+          padding: 20px;
+          background: #161b22;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .team {
+          margin-bottom: 40px;
+          padding: 15px;
+          background: #1e252e;
+          border-radius: 8px;
+        }
+
+        .team h2 {
+          color: #58a6ff;
+          border-bottom: 2px solid #58a6ff;
+          padding-bottom: 8px;
+          margin-bottom: 15px;
+        }
+
+        .team p {
+          font-size: 16px;
+          line-height: 1.8;
+          color: #8b949e;
+        }
+
+        .member {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          background: #21262d;
+          margin-bottom: 10px;
+          border-radius: 8px;
+          transition: 0.3s;
+        }
+
+        .member:hover {
+          background: #30363d;
+        }
+
+        .member img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-left: 15px;
+          border: 2px solid #58a6ff;
+        }
+
+        .member a {
+          color: #58a6ff;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .member a:hover {
+          text-decoration: underline;
+        }
+
+footer {
+  background: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  color: #8f8f8f;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+footer p {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4a69bd;
+  text-decoration: underline;
+}
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-content {
+    float: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .title p {
+    font-size: 0.9em;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  /* تحسين الـ Navbar */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo-title img {
+    width: 150px;
+  }
+
+  .logo-title p {
+    font-size: 35px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-right: 78px;
+  }
+
+  .workshop h2 {
+    font-size: 2em;
+  }
+
+  .workshop-info {
+    padding: 15px;
+  }
+
+  .workshop-info h3 {
+    font-size: 1.3em;
+  }
+
+  .workshop-info p,
+  .workshop-info ul li {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورشة الذكاء الاصطناعي - مدرسة الشهيد مدحت طلعت</title>
+    <link rel="stylesheet" href="about_workshop.css">
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-title">
+                <img src="logo.png" alt="logo">
+                <p>الفريق التقني</p>
+            </div>
+            <ul>
+                <li><a href="https://itmedhat.github.io/team/.html">الرجوع مره اخرى</a></li>
+                <li><a href="about_team.html">معلومات عن الفريق</a></li>
+                <li><a href="team_projects.html">مشاريع الفريق</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Main Content -->
+<main>
+    <!-- Section: Ethical Hacking Workshop Details -->
+    <section id="workshops">
+        <div class="workshop">
+            <h2>ورشة القرصنة الأخلاقية (Ethical Hacking)</h2>
+            
+            <!-- Trainer Information -->
+            <div class="workshop-info">
+                <h3>المدرب</h3>
+                <p>ملك</p>
+            </div>
+
+            <!-- Workshop Environment -->
+            <div class="workshop-info">
+                <h3>بيئة الجلسة</h3>
+                <p>Offline</p>
+            </div>
+
+            <!-- Location -->
+            <div class="workshop-info">
+                <h3>المكان</h3>
+                <p>مختبر التطوير التكنولوجي بالمدرسة</p>
+            </div>
+
+            <!-- Date and Duration -->
+            <div class="workshop-info">
+                <h3>التاريخ</h3>
+                <p>2/13/2025 (الخميس) - الساعة: [10:30 AM]</p>
+            </div>
+
+            <div class="workshop-info">
+                <h3>مدة الورشة</h3>
+                <p>[60] دقيقة</p>
+            </div>
+
+            <!-- Target Audience -->
+            <div class="workshop-info">
+                <h3>الفئة المستهدفة</h3>
+                <p>طلاب المرحلة الثانوية والاعدادية</p>
+            </div>
+
+            <!-- Workshop Description -->
+            <div class="workshop-info">
+                <h3>معلومات عن الورشة</h3>
+                <p>
+                    <strong>تهدف هذه الورشة إلى تعريف الطلاب بمفهوم القرصنة الأخلاقية وكيفية استخدامها لحماية الأنظمة والشبكات. سيتم تغطية المواضيع التالية:</strong>
+                    <ul>
+                        <li>مقدمة عن القرصنة الأخلاقية وأهميتها.</li>
+                        <li>الفرق بين القرصنة الأخلاقية والقرصنة الضارة.</li>
+                        <li>أدوات وتقنيات القرصنة الأخلاقية.</li>
+                        <li>اختبار الاختراق (Penetration Testing) وكيفية تنفيذه.</li>
+                        <li>أمثلة عملية لتطبيقات القرصنة الأخلاقية.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="workshop-info">
+                <h3>نتائج التعلم</h3>
+                <p>
+                    <strong>بنهاية هذه الورشة، سيكون المشاركون قادرين على:</strong>
+                    <ul>
+                        <li>فهم مفهوم القرصنة الأخلاقية وأهدافها.</li>
+                        <li>التعرف على الأدوات والتقنيات المستخدمة في القرصنة الأخلاقية.</li>
+                        <li>تنفيذ اختبارات اختراق بسيطة.</li>
+                        <li>تطبيق مبادئ القرصنة الأخلاقية لحماية الأنظمة.</li>
+                        <li>فهم كيفية استخدام القرصنة الأخلاقية في تحسين الأمان الرقمي.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <!-- Registration Button -->
+            <div class="workshop-info">
+                <a href="https://forms.gle/qFsce2dQZeTGw2zS7" class="btn">تسجيل في الورشة</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+<footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 - فريق تقني - مدرسة الشهيد مدحت طلعت</p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01094669295</p>
+</footer>
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navUl = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', function () {
+                navUl.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class 'fade-in'
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    // Function to check if an element is in the viewport
+    const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+            // Function to handle scroll events
+            const handleScroll = () => {
+                fadeElements.forEach((element) => {
+                    if (isInViewport(element)) {
+                        element.classList.add('fade-in-visible');
+                    }
+                });
+            };
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger the check on page load
+            handleScroll();
+        });
+    </script>
+</body>
+</html>

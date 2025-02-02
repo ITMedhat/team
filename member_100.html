@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسين يحيي حسين احمد - الصفحة الشخصية</title>
+    <style>
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #e0e0e0;
+  direction: rtl;
+}
+
+/* Header styling */
+header {
+  background-color: #1e1e1e;
+  /* Light background for the header */
+  padding: 10px 0;
+  /* Add some padding */
+  position: sticky;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  /* Vertically center items */
+  justify-content: space-between;
+  /* Space between logo/title and links */
+}
+
+/* Group logo and title together */
+.logo-title {
+  display: flex;
+  align-items: center;
+  /* Vertically center logo and title */
+  gap: 10px;
+  /* Space between logo and title */
+  color: white;
+}
+
+.logo-title p {
+  border-right: 2px solid white;
+  ;
+  padding-right: 15px;
+  margin-right: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+nav img {
+  width: 100px;
+  /* Adjust logo width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+nav p {
+  font-size: 24px;
+  /* Large font size for the title */
+  font-weight: bold;
+  /* Bold text */
+  color: white;
+  ;
+  /* Dark text color */
+  margin: 0;
+  /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  /* Remove bullet points */
+  display: flex;
+  /* Display links in a row */
+  gap: 20px;
+  /* Space between links */
+  margin-left: 75px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Link color */
+  font-size: 25px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  transition: color 0.3s ease;
+  margin-left: 10px;
+  color: white;
+  /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+  color: #4a69bd;
+  /* Change color on hover */
+}
+        .content {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #161b22;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .profile-pic {
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid #58a6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+            border-color: #1f6feb;
+        }
+        .section {
+            margin-bottom: 30px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #58a6ff;
+            display: inline-block;
+            padding-bottom: 5px;
+            transition: border-color 0.3s ease;
+        }
+        .section h2:hover {
+            border-color: #1f6feb;
+        }
+        .section div {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #b1bac4;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #161b22;
+            color: #8b949e;
+            font-size: 14px;
+        }
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #1f6feb;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-title">
+                <img src="logo.png" alt="logo">
+                <p>حسين يحيى</p>
+            </div>
+            <ul>
+                <li><a href="members.html">الرجوع مره اخرى</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="content">
+        <img src="member_100.jpg" alt="صورة العضو" class="profile-pic">
+        
+        <div class="section" id="section1">
+            <h2>المعلومات الشخصية</h2>
+            <div><strong>الرقم القومي:</strong> 30812131400313</div>
+            <div><strong>كود الطالب:</strong> 472767317</div>
+            <div><strong>الرتبة:</strong> القائد العام للفريق</div>
+            <div><strong>ID N.:</strong> 100</div>
+        </div>
+        
+        <div class="section" id="section2">
+            <h2>الهدف</h2>
+            <div>
+                أنا هدفي أكون شخص ناجح في شغلي وأقدر أطور الفريق وأحقق إنجازات كبيرة في البرمجة وإدارة المشاريع.
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>المهارات</h2>
+            <div>- شاطر في البرمجة بلغات Python وJavaScript</div>
+            <div>- بعرف أشتغل على تصميم واجهات المستخدم (UI/UX)</div>
+            <div>- بعرف أنظم وقتي وأحل المشاكل</div>
+        </div>
+    </div>
+    <footer>
+        <div><strong>تواصل مع الفريق:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a> | 01066480958</div>
+        <p>© كل الحقوق محفوظة للفريق التقني - 2024</p>
+    </footer>
+
+    <script>
+        function showSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                }, index * 1000);
+            });
+        }
+
+        window.onload = function() {
+            showSections();
+            document.querySelector('.content').style.opacity = 1;
+        };
+    </script>
+</body>
+</html>

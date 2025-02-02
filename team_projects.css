@@ -1,0 +1,567 @@
+/* Reset default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Header styling */
+header {
+  background-color: #1e1e1e;
+  /* Light background for the header */
+  padding: 10px 0;
+  /* Add some padding */
+  position: sticky;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  /* Vertically center items */
+  justify-content: space-between;
+  /* Space between logo/title and links */
+}
+
+/* Group logo and title together */
+.logo-title {
+  display: flex;
+  align-items: center;
+  /* Vertically center logo and title */
+  gap: 10px;
+  /* Space between logo and title */
+  color: white;
+}
+
+.logo-title p {
+  border-right: 2px solid white;
+  ;
+  padding-right: 15px;
+  margin-right: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav img {
+  width: 100px;
+  /* Adjust logo width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+nav p {
+  font-size: 24px;
+  /* Large font size for the title */
+  font-weight: bold;
+  /* Bold text */
+  color: white;
+  ;
+  /* Dark text color */
+  margin: 0;
+  /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  /* Remove bullet points */
+  display: flex;
+  /* Display links in a row */
+  gap: 20px;
+  /* Space between links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Link color */
+  font-size: 20px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  transition: color 0.3s ease;
+  margin-left: 10px;
+  color: white;
+      display: inline-block;
+        padding: 10px 20px;
+        background-color: #6a89cc;
+        /* New accent color */
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        padding: 8px 18px;
+  /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #4a69bd;
+      /* Darker accent on hover */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+      /* Change color on hover */
+}
+
+/* Main Content */
+main {
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #6a89cc;
+  /* New accent color for headings */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Workshop Header (Icon + Title) */
+.workshop-header {
+  display: flex;
+  align-items: center;
+  /* Vertically center the icon and title */
+  gap: 10px;
+  /* Space between the icon and title */
+  margin-bottom: 15px;
+  /* Add space below the header */
+  font-size: 20px;
+}
+
+.workshop-header img {
+  width: 40px;
+  /* Adjust icon size */
+  height: 40px;
+  /* Adjust icon size */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+}
+
+.workshop-header h3 {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 24px;
+  /* Adjust title font size */
+  color: #6a89cc;
+  /* Title color */
+  font-size: 25px;
+}
+
+.workshop {
+  background: #1f1f1f;
+  /* Dark card background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(106, 137, 204, 0.5);
+  /* Accent color glow */
+}
+
+.workshop h3 {
+  margin-top: 0;
+  color: #6a89cc;
+  /* New accent color for subheadings */
+  font-size: 20px;
+}
+
+.workshop p {
+  margin: 10px 0;
+  color: #b0b0b0;
+  /* Lighter text for contrast */
+}
+
+.workshop ul {
+  padding-left: 20px;
+}
+
+.workshop ul li {
+  margin-bottom: 10px;
+  color: #b0b0b0;
+}
+
+.about {
+  background: #1f1f1f;
+  /* Dark card background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(106, 137, 204, 0.5);
+  /* Accent color glow */
+}
+
+.about h3 {
+  margin-top: 0;
+  color: #6a89cc;
+  /* New accent color for subheadings */
+  font-size: 1.5em;
+}
+
+.about p {
+  margin: 10px 0;
+  color: #b0b0b0;
+  /* Lighter text for contrast */
+}
+
+.about ul {
+  padding-left: 20px;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+  color: #b0b0b0;
+}
+
+.project,
+.member {
+  background: #2e2e2e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+  color: #ffffff;
+  /* Brighter text for emphasis */
+}
+
+.workshop h3,
+.project h3,
+.member h3,
+.about {
+  color: #6a89cc;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.workshop p,
+.project p,
+.member p,
+.about {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6a89cc;
+  /* New accent color */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 17.5px;
+}
+
+.btn:hover {
+  background-color: #4a69bd;
+  /* Darker accent on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(106, 137, 204, 0.5);
+    /* Accent color glow */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #b0b0b0;
+}
+
+.project-card .programmers {
+  font-size: 17px;
+  color: #b0b0b0;
+  margin-top: 10px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a89cc;
+    /* New accent color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 17.5px;
+}
+
+.learn-more-btn:hover {
+  background-color: #4a69bd;
+    transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  color: #8f8f8f;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+footer p {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4a69bd;
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  /* Adjust container width */
+  max-width: 1200px;
+  /* Maximum width */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-content {
+    float: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .title p {
+    font-size: 0.9em;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    /* Stack logo and links vertically */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    /* Stack logo and title vertically */
+    text-align: center;
+  }
+
+  .logo-title p {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    /* Stack links vertically */
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    /* Smaller font size for mobile */
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    /* Single column for mobile */
+  }
+}
+@media (max-width: 768px) {
+
+  /* تحسين الـ Navbar */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo-title img {
+    width: 150px;
+  }
+
+  .logo-title p {
+    font-size: 35px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 8px 18px;
+  }
+
+  /* تحسين التنسيق العام */
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* تحسين العناوين */
+  section h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  /* تحسين البطاقات */
+  .workshop,
+  .project,
+  .member,
+  .about {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* تحسين النصوص */
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  /* تحسين الأزرار */
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* تحسين الـ Footer */
+  footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+}

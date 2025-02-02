@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفريق التقني - مدرسة الشهيد مدحت طلعت</title>
+    <link rel="stylesheet" href="team_projects.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-title">
+                    <img src="logo.png" alt="logo">
+                    <p>الفريق التقني</p>
+                </div>
+                <ul>
+                    <li><a href="https://itmedhat.github.io/team/.html">تدريبات</a></li>
+                    <li><a href="about_team.html">معلومات عن الفريق</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section: Projects -->
+        <section id="projects">
+            <div class="container">
+                <h2>المشاريع</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <h3>نظام إدارة الحضور والغياب</h3>
+                        <p>مشروع بنحاول من خلاله نعمل نظام دقيق وسهل لإدارة حضور وغياب الطلاب، بحيث يسهل متابعة أداء الطلاب بشكل مستمر.</p>
+                        <!-- <p class="programmers">المبرمجون: أحمد محمد، علي محمود</p> -->
+                        <!-- <a href="#" class="learn-more-btn">تعرف أكثر</a> -->
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <h3>منصة التعليم الإلكتروني</h3>
+                        <p>منصة هتسمح للطلاب والمعلمين بالتواصل ومشاركة المحتوى الدراسي بطريقة سريعة وآمنة.</p>
+                        <!-- <p class="programmers">المبرمجون: سارة أحمد، يوسف خالد</p> -->
+                        <!-- <a href="#" class="learn-more-btn">تعرف أكثر</a> -->
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <h3>أدوات تحليل البيانات</h3>
+                        <p>بنطور أدوات تحليل بيانات متقدمة عشان نساعد المعلمين والإداريين في اتخاذ قرارات مبنية على البيانات.</p>
+                        <!-- <p class="programmers">المبرمجون: محمد علي، فاطمة حسن</p> -->
+                        <!-- <a href="#" class="learn-more-btn">تعرف أكثر</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 - فريق تقني - مدرسة الشهيد مدحت طلعت</p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01094669295</p>
+</footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+                document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navUl = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', function () {
+                navUl.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class 'fade-in'
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    // Function to check if an element is in the viewport
+    const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+            // Function to handle scroll events
+            const handleScroll = () => {
+                fadeElements.forEach((element) => {
+                    if (isInViewport(element)) {
+                        element.classList.add('fade-in-visible');
+                    }
+                });
+            };
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger the check on page load
+            handleScroll();
+        });
+    </script>
+</body>
+</html>

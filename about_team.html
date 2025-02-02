@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفريق التقني - مدرسة الشهيد مدحت طلعت</title>
+    <link rel="stylesheet" href="about_team.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-title">
+                <img src="logo.png" alt="logo">
+                <p>الفريق التقني</p>
+            </div>
+            <ul>
+                <li><a href="https://itmedhat.github.io/team/.html">تدريبات</a></li>
+                <li><a href="team_projects.html">مشاريع الفريق</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main>
+
+<!-- Section: About -->
+<section id="about">
+    <div class="container">
+        <div class="about fade-in">
+            <h2>مرحباً بكم في الفريق التقني</h2>
+            <p>
+                الفريق التقني هو مجموعة من الطلاب المبدعين المتحمسين لعالم التكنولوجيا والبرمجة. تأسس الفريق بهدف استخدام مهاراتنا في تطوير حلول تقنية مبتكرة لدعم العملية التعليمية داخل المدرسة، مما يساعد الطلاب والمعلمين على تحسين طرق التدريس والتعلم من خلال التكنولوجيا.
+            </p>
+            <p>
+                نسعى دائمًا إلى تطوير مشاريع تخدم المجتمع المدرسي، سواء من خلال إنشاء أنظمة إدارية، مواقع إلكترونية، تطبيقات، أو تقديم ورش عمل تدريبية لزملائنا الطلاب في مجالات البرمجة، الذكاء الاصطناعي، الأمن السيبراني، وتطوير الألعاب.
+            </p>
+
+            <div class="faq fade-in">
+                <h3>ما هي أهداف الفريق التقني؟</h3>
+                <p>يهدف الفريق إلى تعزيز الابتكار التقني داخل المدرسة من خلال تنفيذ مشاريع برمجية، تقديم تدريبات تقنية، والمشاركة في المسابقات التكنولوجية لتمثيل المدرسة على مستويات أعلى.</p>
+            </div>
+
+            <div class="faq fade-in">
+                <h3>كيف يمكنني الانضمام إلى الفريق؟</h3>
+                <p>نرحب بجميع الطلاب المهتمين بالتكنولوجيا والبرمجة! يمكنك التواصل معنا عبر البريد الإلكتروني أو زيارة مختبر التطوير التكنولوجي بالمدرسة للحصول على مزيد من التفاصيل.</p>
+            </div>
+
+            <div class="faq fade-in">
+                <h3>هل التدريبات التي يقدمها الفريق مجانية؟</h3>
+                <p>نعم، جميع التدريبات التي نقدمها مجانية لطلاب المدرسة، حيث نهدف إلى نشر المعرفة التقنية بين زملائنا وتعزيز مهاراتهم في المجالات المختلفة.</p>
+            </div>
+
+            <!-- <div class="btn">
+                <a href="members.html">أعضاء الفريق</a>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+<footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 - فريق تقني - مدرسة الشهيد مدحت طلعت</p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01094669295</p>
+</footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all elements with the class 'fade-in'
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            // Function to check if an element is in the viewport
+            const isInViewport = (element) => {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            };
+
+            // Function to handle scroll events
+            const handleScroll = () => {
+                fadeElements.forEach((element) => {
+                    if (isInViewport(element)) {
+                        element.classList.add('fade-in-visible');
+                    }
+                });
+            };
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger the check on page load
+            handleScroll();
+        });
+    </script>
+</body>
+</html>
