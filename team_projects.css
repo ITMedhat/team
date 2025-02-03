@@ -109,6 +109,20 @@ nav ul li a:hover {
       /* Change color on hover */
 }
 
+strong {
+  color: #ffffff;
+  /* Brighter text for emphasis */
+}
+
+.style {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.special {
+  font-size: 18px;
+}
+
 /* Main Content */
 main {
   margin-top: 20px;

@@ -45,13 +45,12 @@ nav {
 
 .logo-title p {
   border-right: 2px solid white;
-  ;
   padding-right: 15px;
   margin-right: 15px;
   height: 40px;
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 35px;
   color: white;
 }
 
@@ -80,8 +79,8 @@ nav ul {
   display: flex;
   /* Display links in a row */
   gap: 20px;
-  /* Space between links */
   margin-left: 75px;
+  /* Space between links */
 }
 
 nav ul li a {
@@ -89,25 +88,39 @@ nav ul li a {
   /* Remove underline from links */
   color: #333;
   /* Link color */
-  font-size: 25px;
+  font-size: 20px;
   /* Font size */
   font-weight: bold;
   /* Bold text */
   transition: color 0.3s ease;
   margin-left: 10px;
   color: white;
+      display: inline-block;
+        padding: 10px 20px;
+        background-color: #6a89cc;
+        /* New accent color */
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        padding: 8px 18px;
   /* Smooth color transition on hover */
 }
 
 nav ul li a:hover {
-  color: #4a69bd;
-  /* Change color on hover */
+    background-color: #4a69bd;
+      /* Darker accent on hover */
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+      /* Change color on hover */
 }
         .content {
             max-width: 800px;
             margin: 30px auto;
             padding: 20px;
-            background: #161b22;
+            background: #1e1e1e;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             opacity: 0;
@@ -119,51 +132,170 @@ nav ul li a:hover {
             height: 160px;
             border-radius: 50%;
             margin: 0 auto 20px;
-            border: 4px solid #58a6ff;
+            border: 4px solid #6a89cc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
         .profile-pic:hover {
             transform: scale(1.1);
-            border-color: #1f6feb;
+            border-color: #4a69bd;
         }
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
+        .section p {
+          font-size: 18px;
+          font-weight: bold;
+        }
         .section h2 {
-            font-size: 24px;
+            font-size: 35px;
             margin-bottom: 10px;
-            border-bottom: 3px solid #58a6ff;
+            border-bottom: 3px solid #6a89cc;
             display: inline-block;
             padding-bottom: 5px;
             transition: border-color 0.3s ease;
         }
-        .section h2:hover {
-            border-color: #1f6feb;
-        }
-        .section div {
-            line-height: 1.8;
-            font-size: 18px;
-            color: #b1bac4;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 15px;
-            background: #161b22;
-            color: #8b949e;
-            font-size: 14px;
-        }
-        footer a {
-            color: #58a6ff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        footer a:hover {
-            color: #1f6feb;
-        }
+footer {
+  background: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  color: #8f8f8f;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+strong {
+  color: #ffffff;
+  /* Brighter text for emphasis */
+}
+
+.style {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.special {
+  font-size: 18px;
+}
+
+footer p {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4a69bd;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-content {
+    float: none;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .title p {
+    font-size: 0.9em;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  /* تحسين الـ Navbar */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo-title img {
+    width: 150px;
+  }
+
+  .logo-title p {
+    font-size: 35px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 18px;
+    margin-right: 78px;
+  }
+}
     </style>
 </head>
 <body>
@@ -172,7 +304,7 @@ nav ul li a:hover {
         <nav>
             <div class="logo-title">
                 <img src="logo.png" alt="logo">
-                <p>حسين يحيى</p>
+                <p>حسين يحيى حسين</p>
             </div>
             <ul>
                 <li><a href="members.html">الرجوع مره اخرى</a></li>
@@ -183,31 +315,31 @@ nav ul li a:hover {
     <div class="content">
         <img src="member_100.jpg" alt="صورة العضو" class="profile-pic">
         
-        <div class="section" id="section1">
+        <div class="section">
             <h2>المعلومات الشخصية</h2>
-            <div><strong>الرقم القومي:</strong> 30812131400313</div>
-            <div><strong>كود الطالب:</strong> 472767317</div>
-            <div><strong>الرتبة:</strong> القائد العام للفريق</div>
-            <div><strong>ID N.:</strong> 100</div>
+            <p><strong>الرتبة : </strong> القائد العام للفريق</p>
+            <p><strong>التخصص : </strong>مبرمج رئيسي</p>
+            <p><strong>مدرسة : </strong>الشهيد مدحت طلعت</p>
+            <p><strong>الصف : </strong>الاول الثانوي</p>
+            <p><strong>السن : </strong>16</p>
         </div>
         
-        <div class="section" id="section2">
-            <h2>الهدف</h2>
-            <div>
-                أنا هدفي أكون شخص ناجح في شغلي وأقدر أطور الفريق وأحقق إنجازات كبيرة في البرمجة وإدارة المشاريع.
-            </div>
+        <div class="section">
+            <h2>المهارات</h2>
+            <p><strong>قيد التنفيذ</strong></p>
         </div>
 
-        <div class="section" id="section3">
-            <h2>المهارات</h2>
-            <div>- شاطر في البرمجة بلغات Python وJavaScript</div>
-            <div>- بعرف أشتغل على تصميم واجهات المستخدم (UI/UX)</div>
-            <div>- بعرف أنظم وقتي وأحل المشاكل</div>
+        <div class="section">
+            <h2>المشاريع</h2>
+            <p><strong>قيد التنفيذ</strong></p>
         </div>
     </div>
     <footer>
-        <div><strong>تواصل مع الفريق:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a> | 01066480958</div>
-        <p>© كل الحقوق محفوظة للفريق التقني - 2024</p>
+        <p class="style"><strong>تم تصميم الموقع من قبل: يوسف محمد حازم</strong></p>
+        <p class="special">بمساعده : مهند تامر - حسين يحيى - احمد محمد</p>
+        <p>جميع الحقوق محفوظة &copy; 2025 - فريق تقني - مدرسة الشهيد مدحت طلعت</p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01094669295</p>
     </footer>
 
     <script>

@@ -293,6 +293,15 @@ strong {
   /* Brighter text for emphasis */
 }
 
+.style {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.special {
+  font-size: 18px;
+}
+
 .workshop h3,
 .project h3,
 .member h3,

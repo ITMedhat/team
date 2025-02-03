@@ -16,6 +16,19 @@ header {
   position: sticky;
 }
 
+strong {
+  color: #ffffff;
+  /* Brighter text for emphasis */
+}
+
+.style {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.special {
+  font-size: 18px;
+}
 
 nav {
   display: flex;

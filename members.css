@@ -110,67 +110,89 @@ nav ul li a:hover {
       /* Change color on hover */
 }
 
-        .main-content {
-          max-width: 1000px;
-          margin: 30px auto;
-          padding: 20px;
-          background: #161b22;
-          border-radius: 12px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        }
+/* تنسيق القسم الرئيسي */
 
-        .team {
-          margin-bottom: 40px;
-          padding: 15px;
-          background: #1e252e;
-          border-radius: 8px;
-        }
+                .main-content {
+                  max-width: 900px;
+                  margin: 50px auto;
+                  background: #1e1e1e;
+                  padding: 20px;
+                  border-radius: 12px;
+                  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                }
+        
+                h2 {
+                  color: #6a89cc;
+                  text-align: center;
+                  font-size: 30px;
+                }
+        
+                .team {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                  gap: 20px;
+                  padding: 10px;
+                }
+        
+                .member {
+                  background: #2e2e2e;
+                    color: #b0b0b0;
+                  padding: 15px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                  transition: transform 0.3s ease-in-out;
+                }
+        
+                .member:hover {
+                  transform: scale(1.05);
+                }
+        
+                .member h3 {
+                  margin: 0 0 10px;
+                  font-size: 21.5px;
+                  color: #ffffff;
+                }
+        
+                .member p {
+                  margin: 5px 0;
+                  font-size: 16px;
+                }
+        
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6a89cc;
+  /* New accent color */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 17.5px;
+}
 
-        .team h2 {
-          color: #58a6ff;
-          border-bottom: 2px solid #58a6ff;
-          padding-bottom: 8px;
-          margin-bottom: 15px;
-        }
+.btn:hover {
+  background-color: #4a69bd;
+  /* Darker accent on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
 
-        .team p {
-          font-size: 16px;
-          line-height: 1.8;
-          color: #8b949e;
-        }
+strong {
+  color: #ffffff;
+  /* Brighter text for emphasis */
+}
 
-        .member {
-          display: flex;
-          align-items: center;
-          padding: 10px;
-          background: #21262d;
-          margin-bottom: 10px;
-          border-radius: 8px;
-          transition: 0.3s;
-        }
+.style {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-        .member:hover {
-          background: #30363d;
-        }
-
-        .member img {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          margin-left: 15px;
-          border: 2px solid #58a6ff;
-        }
-
-        .member a {
-          color: #58a6ff;
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: bold;
-        }
-
-        .member a:hover {
-          text-decoration: underline;
-        }
+.special {
+  font-size: 18px;
+}
 
 footer {
   background: #1e1e1e;
