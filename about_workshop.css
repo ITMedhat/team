@@ -376,6 +376,16 @@ strong {
 }
 
 /* Footer */
+footer {
+  background: #1e1e1e;
+  padding: 30px 0;
+  text-align: center;
+  color: #8f8f8f;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
 footer p {
   margin: 0px;
   font-size: 16px;
