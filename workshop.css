@@ -217,11 +217,11 @@ section h2 {
                 }
         
                 /* عندما تكون الورشة مغلقة */
-                .workshop.closed .btn {
+                .workshop.closed #sp {
                   display: none;
                   /* إخفاء أزرار التسجيل */
                 }
-        
+
                 .workshop.closed .workshop-closed {
                   display: flex;
                   /* عرض رسالة الورشة مغلقة */
