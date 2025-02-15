@@ -132,7 +132,7 @@ section h2 {
   animation: fadeIn 1s ease-in-out;
 }
 
-section h1 {
+h1 {
   font-size: 37.5px;
   margin-bottom: 20px;
   color: #6a89cc;
@@ -225,56 +225,6 @@ section h1 {
   100% {
     transform: scale(1.05);
     /* تقليل التكبير */
-  }
-}
-
-/* تصميم متجاوب للهواتف */
-@media (max-width: 768px) {
-  .countdown {
-    gap: 10px;
-    /* تقليل المسافة بين العناصر */
-  }
-
-  .countdown-item {
-    width: 80px;
-    /* تقليل العرض أكثر */
-    padding: 10px;
-    /* تقليل الحشو */
-  }
-
-  .countdown-item span {
-    font-size: 1.5rem;
-    /* تقليل حجم الأرقام أكثر */
-  }
-
-  .countdown-item p {
-    font-size: 0.9rem;
-    /* تقليل حجم النص أكثر */
-  }
-}
-
-@media (max-width: 480px) {
-  .countdown {
-    flex-direction: column;
-    /* عرض العناصر بشكل عمودي */
-    align-items: center;
-    gap: 10px;
-  }
-
-  .countdown-item {
-    width: 90%;
-    /* جعل العرض يأخذ معظم المساحة */
-    padding: 15px;
-  }
-
-  .countdown-item span {
-    font-size: 2rem;
-    /* زيادة حجم الأرقام قليلاً */
-  }
-
-  .countdown-item p {
-    font-size: 1rem;
-    /* زيادة حجم النص قليلاً */
   }
 }
 
@@ -662,5 +612,54 @@ footer a:hover {
     text-align: center;
     font-size: 14px;
     padding: 15px 10px;
+  }
+}
+/* تصميم متجاوب للهواتف */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 10px;
+    /* تقليل المسافة بين العناصر */
+  }
+
+  .countdown-item {
+    width: 80px;
+    /* تقليل العرض أكثر */
+    padding: 10px;
+    /* تقليل الحشو */
+  }
+
+  .countdown-item span {
+    font-size: 1.5rem;
+    /* تقليل حجم الأرقام أكثر */
+  }
+
+  .countdown-item p {
+    font-size: 0.9rem;
+    /* تقليل حجم النص أكثر */
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    flex-direction: column;
+    /* عرض العناصر بشكل عمودي */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .countdown-item {
+    width: 90%;
+    /* جعل العرض يأخذ معظم المساحة */
+    padding: 15px;
+  }
+
+  .countdown-item span {
+    font-size: 2rem;
+    /* زيادة حجم الأرقام قليلاً */
+  }
+
+  .countdown-item p {
+    font-size: 1rem;
+    /* زيادة حجم النص قليلاً */
   }
 }
