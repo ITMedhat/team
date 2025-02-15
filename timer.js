@@ -1,4 +1,4 @@
-let countDownDate = new Date("Feb 15, 2025 18:30:0").getTime();
+let countDownDate = new Date("Feb 15, 2025 18:35:0").getTime();
 
 let counter = setInterval(() => {
   let dateNow = new Date().getTime();
