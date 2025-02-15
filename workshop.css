@@ -132,6 +132,16 @@ section h2 {
   animation: fadeIn 1s ease-in-out;
 }
 
+section h1 {
+  font-size: 37.5px;
+  margin-bottom: 20px;
+  color: #6a89cc;
+  /* New accent color for headings */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  padding-bottom: 20px;
+}
+
 /* Workshop Header (Icon + Title) */
 .workshop-header {
   display: flex;
@@ -161,6 +171,111 @@ section h2 {
   color: #6a89cc;
   /* Title color */
   font-size: 25px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /* تقليل المسافة بين العناصر */
+  margin: 30px 0;
+  text-align: center;
+  flex-wrap: wrap;
+  /* السماح للعناصر بالانتقال لأسفل إذا لم يكن هناك مساحة كافية */
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  /* تقليل الحشو */
+  width: 100px;
+  /* تقليل العرض */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-item:hover {
+  transform: translateY(-5px);
+  /* تقليل الحركة */
+  box-shadow: 0 8px 20px rgba(106, 137, 204, 0.5);
+}
+
+.countdown-item span {
+  font-size: 2rem;
+  /* تقليل حجم الأرقام */
+  font-weight: bold;
+  display: block;
+  color: #6a89cc;
+  animation: grow 1s infinite alternate ease-in-out;
+}
+
+.countdown-item p {
+  font-size: 1rem;
+  /* تقليل حجم النص */
+  margin: 10px 0 0;
+  color: #dcdcdc;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+    /* تقليل التكبير */
+  }
+}
+
+/* تصميم متجاوب للهواتف */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 10px;
+    /* تقليل المسافة بين العناصر */
+  }
+
+  .countdown-item {
+    width: 80px;
+    /* تقليل العرض أكثر */
+    padding: 10px;
+    /* تقليل الحشو */
+  }
+
+  .countdown-item span {
+    font-size: 1.5rem;
+    /* تقليل حجم الأرقام أكثر */
+  }
+
+  .countdown-item p {
+    font-size: 0.9rem;
+    /* تقليل حجم النص أكثر */
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    flex-direction: column;
+    /* عرض العناصر بشكل عمودي */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .countdown-item {
+    width: 90%;
+    /* جعل العرض يأخذ معظم المساحة */
+    padding: 15px;
+  }
+
+  .countdown-item span {
+    font-size: 2rem;
+    /* زيادة حجم الأرقام قليلاً */
+  }
+
+  .countdown-item p {
+    font-size: 1rem;
+    /* زيادة حجم النص قليلاً */
+  }
 }
 
                 /* تنسيق الورشة */
